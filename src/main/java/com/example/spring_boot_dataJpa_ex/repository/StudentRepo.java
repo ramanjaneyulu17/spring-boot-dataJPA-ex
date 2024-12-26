@@ -10,9 +10,10 @@ import java.util.Optional;
 
 @Repository
 public interface StudentRepo extends JpaRepository<Student,Integer> {
-    List<Student> findByGrade(char grade);
+   // List<Student> findByGrade(char grade);
 
-    List<Student> findByScoreGreaterThan(int i);
+
+    // List<Student> findByScoreGreaterThan(int i);
 
 //List<Student> findByName(String name);
 }

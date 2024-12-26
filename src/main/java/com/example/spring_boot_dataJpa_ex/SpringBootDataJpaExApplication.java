@@ -20,7 +20,7 @@ public class SpringBootDataJpaExApplication {
 
 		StudentRepo sr=context.getBean(StudentRepo.class);
 
-		System.out.println(sr.findByScoreGreaterThan(70));
+		//System.out.println(sr.findByScoreGreaterThan(70));
 
 		//System.out.println(sr.findByGrade('B'));
 
@@ -34,11 +34,11 @@ public class SpringBootDataJpaExApplication {
 //		s1.setPassed(true);
 //		s1.setGrade('D');
 //
-//		s2.setRollNo(102);
-//		s2.setName("Ramz");
-//		s2.setScore(80);
-//		s2.setPassed(true);
-//		s2.setGrade('B');
+		s2.setRollNo(102);
+		s2.setName("Ramanji");
+		s2.setScore(100);
+		s2.setPassed(true);
+		s2.setGrade('A');
 //
 //		s3.setRollNo(103);
 //		s3.setName("Pant");
@@ -49,6 +49,8 @@ public class SpringBootDataJpaExApplication {
 //		sr.save(s1);
 //		sr.save(s2);
 //		sr.save(s3);
+
+		sr.delete(s2);
 	}
 
 }
